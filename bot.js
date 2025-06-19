@@ -6,7 +6,7 @@ const { URL } = require('url');
 
 // --- Configuration ---
 const PROXY_FILE_PATH = 'proxy.txt';
-const TARGET_RPS = 150; // Target requests per second
+const TARGET_RPS = 1000; // Target requests per second
 const NUM_WORKERS = 8; // Number of worker threads
 const REQUEST_INTERVAL_MS = 1000 / (TARGET_RPS / NUM_WORKERS); // Interval per worker
 const REPORT_INTERVAL_MS = 1000; // RPS report every 1 second
